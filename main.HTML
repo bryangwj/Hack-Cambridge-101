@@ -1,9 +1,18 @@
 <link rel="stylesheet" type="text/css" href="mainCSS.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <div class="game">
-    <div class="counter" id= "counter">00s</div>
+    <div class="counter" id="counter">00s</div>
     <div class="score">
-      00
+        00
     </div>
+</div>
+<div class="pregame">
+    <button class="w3-btn w3-ripple w3-green" id="playgame" onclick="startGame()">Play</button>
 </div>
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 <script src="mainJS.js"></script>
+<script>
+    function startGame() {
+        countdown();
+    }
+</script>

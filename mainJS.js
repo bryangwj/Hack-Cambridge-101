@@ -50,9 +50,9 @@ function dropBox(){
   });
 }
 
-for (i = 0; i < 10; i++) { 
+/*for (i = 0; i < 10; i++) { 
   dropBox();
-}
+}*/
 
 $(document).on('click', '.box', function(){
 
@@ -89,6 +89,4 @@ function countdown() {
 	        }
 	    }
     	tick();
-	}
-
-countdown();
+}
