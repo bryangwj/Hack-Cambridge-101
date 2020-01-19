@@ -1,9 +1,35 @@
 <link rel="stylesheet" type="text/css" href="mainCSS.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<head>
+  <meta charset="UTF-8">
+  <title>101rekt Game</title>
+  <link rel="stylesheet" type="text/css" href="mainCSS.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
 <div class="game">
-    <div class="counter" id= "counter">00s</div>
+    <div class ="highscore" id="high">
+        Highscore = 0
+    </div>
     <div class="score">
-      00
+        00
     </div>
 </div>
+<div class="pregame">
+    <button class="w3-btn w3-ripple w3-green" id="playgame" onclick="myFunction()">Play</button>
+</div>
+
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 <script src="mainJS.js"></script>
+<script>
+  function myFunction() {
+  var demo = document.getElementById('playgame');
+  if (demo.innerHTML == "Play"){
+  start();
+  demo.innerHTML = "Reset";
+  }
+  else{
+  start.GameOver();
+  demo.innerHTML = "Play";
+  }
+}
+</script>

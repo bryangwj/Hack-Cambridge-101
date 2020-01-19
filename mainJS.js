@@ -1,3 +1,4 @@
+var hiscore = 0;
 function start(){
     var score = 0;
     var color = "blue";
@@ -138,12 +139,23 @@ function start(){
         }
     function GameOver(){
         var boxes = document.getElementsByClassName('box');
+        var demo = document.getElementById('playgame');
+        var hi = document.getElementById('high');
+        var st = "Highscore = "
         while(boxes[0]){
             boxes[0].parentNode.removeChild(boxes[0]);}
         clearInterval(runGame);
         alert("game over. Score = " + score);
-        start();
+        demo.innerHTML = "Play";
+        if (score > hiscore){
+        hiscore = score;
+        }
+        else{
+
+        }
+        hi.innerHTML = st.concat(hiscore);//start();
     }
+    start.GameOver = GameOver;
     //countdown();
 }
-start();
+//start();
